@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>Admin Demo — Alya & Raka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="site-header admin-header"><a class="brand" href="index.html">A <span>♥</span> R <small>ADMIN DEMO</small></a><div class="admin-header-actions"><a class="button button-outline" href="index.html">← Lihat Undangan</a><button class="button button-primary" id="exportData">Ekspor Data JSON</button></div></header>
+  <main class="admin-main">
+    <div class="admin-welcome"><div><p class="eyebrow">PANEL PENGELOLAAN</p><h1>Dashboard Undangan</h1><p>Kelola data demo yang tersimpan di browser ini.</p></div><span class="demo-label">MODE DEMO LOKAL</span></div>
+    <div class="admin-stats">
+      <article><span>Total RSVP</span><strong id="totalRsvp">0</strong><small>Formulir tersimpan</small></article>
+      <article><span>Akan hadir</span><strong id="totalAttending">0</strong><small>Konfirmasi hadir</small></article>
+      <article><span>Tidak hadir</span><strong id="totalAbsent">0</strong><small>Konfirmasi tidak hadir</small></article>
+      <article><span>Total ucapan</span><strong id="totalWishes">0</strong><small>Doa dari tamu</small></article>
+    </div>
+    <section class="admin-panel">
+      <div class="panel-heading"><div><p class="eyebrow">DATA TAMU</p><h2>Konfirmasi Kehadiran</h2></div><div class="table-actions"><input id="guestSearch" type="search" placeholder="Cari nama tamu..." aria-label="Cari nama tamu"><button class="button button-outline" id="exportCsv">Ekspor CSV</button></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Nama</th><th>WhatsApp</th><th>Status</th><th>Jumlah</th><th>Sesi</th><th>Pesan</th></tr></thead><tbody id="rsvpRows"><tr><td colspan="6" class="empty-cell">Belum ada data RSVP di browser ini.</td></tr></tbody></table></div>
+    </section>
+    <section class="admin-panel">
+      <div class="panel-heading"><div><p class="eyebrow">BUKU TAMU</p><h2>Ucapan & Doa</h2></div><button class="button button-outline" id="clearWishes">Hapus semua ucapan</button></div>
+      <div id="adminWishes" class="admin-wishes"><p class="empty-cell">Belum ada ucapan.</p></div>
+    </section>
+    <section class="admin-panel">
+      <div class="panel-heading"><div><p class="eyebrow">KONFIGURASI CONTOH</p><h2>Informasi Undangan</h2></div></div>
+      <p class="config-note">Data di bawah adalah contoh yang ditulis langsung di <code>index.html</code>. Ubah nama, tanggal, lokasi, rekening, foto, dan teks di file HTML sebelum dipublikasikan. Panel ini belum menyimpan perubahan konten.</p>
+      <div class="config-grid"><div><strong>Nama mempelai</strong><span>Alya Putri Maharani & Raka Pratama</span></div><div><strong>Tanggal</strong><span>22 November 2026</span></div><div><strong>Lokasi</strong><span>Cirebon, Jawa Barat</span></div><div><strong>Tema</strong><span>Biru pastel</span></div></div>
+    </section>
+    <div class="admin-warning"><strong>Catatan penting:</strong> GitHub Pages hanya menghosting file statis. Data RSVP dan ucapan di demo ini tersimpan di localStorage browser pengunjung masing-masing, sehingga tidak otomatis terkumpul di dashboard Anda. Untuk penggunaan nyata, hubungkan formulir ke backend/database seperti Supabase atau Firebase dan lindungi panel admin dengan autentikasi sungguhan.</div>
+  </main>
+  <footer class="site-footer"><span>© 2026 Alya & Raka</span><a href="index.html">Kembali ke undangan ↗</a></footer>
+  <div class="toast" id="toast" role="status"></div><script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#cfe7f8">
+  <meta name="description" content="Undangan pernikahan Alya dan Raka. Merupakan suatu kehormatan bagi kami untuk berbagi hari bahagia bersama Anda.">
+  <meta property="og:title" content="Pernikahan Alya & Raka">
+  <meta property="og:description" content="Dengan penuh sukacita, kami mengundang Anda ke pernikahan kami.">
+  <meta property="og:type" content="website">
+  <title>Undangan Pernikahan — Alya & Raka</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="music-indicator" id="musicIndicator" aria-live="polite">♫ <span>Musik mati</span></div>
+  <audio id="bgMusic" loop preload="none">
+    <!-- Ganti dengan file musik milik sendiri, misalnya assets/music.mp3 -->
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Alya dan Raka beranda">A <span>♥</span> R</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="#couple">Mempelai</a><a href="#story">Cerita</a><a href="#event">Acara</a>
+      <a href="#gallery">Galeri</a><a href="#rsvp">RSVP</a><a href="#wishes">Ucapan</a>
+    </nav>
+    <button class="icon-button music-button" id="musicToggle" type="button" aria-label="Putar atau hentikan musik">♫</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-decoration deco-one">✿</div><div class="hero-decoration deco-two">❀</div>
+      <div class="hero-content">
+        <p class="eyebrow">THE WEDDING CELEBRATION</p>
+        <h1>Alya <span class="ampersand">&</span> Raka</h1>
+        <p class="hero-subtitle">Dengan penuh rasa syukur, kami mengundang Anda<br class="desktop-only"> untuk hadir di hari bahagia kami.</p>
+        <div class="hero-date"><span>22</span><i></i><span>NOV</span><i></i><span>2026</span></div>
+        <p class="guest-line">Kepada Yth. <strong id="guestName">Bapak/Ibu/Saudara/i</strong></p>
+        <button class="button button-primary" id="openInvitation">Buka Undangan <span>↓</span></button>
+        <p class="tiny-note">Mohon doa restu untuk perjalanan baru kami</p>
+      </div>
+      <div class="hero-bottom-wave"></div>
+    </section>
+
+    <section class="intro section" id="intro">
+      <p class="arabic" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      <p class="eyebrow">ASSALAMU’ALAIKUM WARAHMATULLAHI WABARAKATUH</p>
+      <h2>Dengan memohon rahmat<br>dan ridho Allah SWT</h2>
+      <p class="section-copy">Kami bermaksud menyelenggarakan pernikahan putra-putri kami. Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+      <div class="ornament">✧ <span>✦</span> ✧</div>
+    </section>
+
+    <section class="couple section section-tint" id="couple">
+      <div class="section-heading"><p class="eyebrow">DUA HATI, SATU TUJUAN</p><h2>Calon Mempelai</h2><p>Dengan cinta dan doa keluarga, kami memulai babak baru.</p></div>
+      <div class="couple-grid">
+        <article class="person-card">
+          <div class="portrait portrait-bride" role="img" aria-label="Ilustrasi foto mempelai wanita"><span>AR</span></div>
+          <p class="person-role">Mempelai Wanita</p><h3>Alya Putri Maharani</h3>
+          <p>Putri pertama dari<br><strong>Bapak Ahmad & Ibu Siti</strong></p>
+          <a class="text-link" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        </article>
+        <div class="couple-heart" aria-hidden="true">♡</div>
+        <article class="person-card">
+          <div class="portrait portrait-groom" role="img" aria-label="Ilustrasi foto mempelai pria"><span>RP</span></div>
+          <p class="person-role">Mempelai Pria</p><h3>Raka Pratama</h3>
+          <p>Putra kedua dari<br><strong>Bapak Budi & Ibu Rina</strong></p>
+          <a class="text-link" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="section-heading"><p class="eyebrow">SETIAP KISAH PUNYA AWAL</p><h2>Kisah Cinta Kami</h2><p>Langkah-langkah kecil yang membawa kami ke hari ini.</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-dot">♡</span><p class="timeline-date">2019 · Pertama Bertemu</p><h3>Sebuah Sapaan Sederhana</h3><p>Kami berkenalan tanpa menyangka bahwa pertemuan singkat itu akan menjadi awal cerita yang begitu berarti.</p></article>
+        <article class="timeline-item"><span class="timeline-dot">✧</span><p class="timeline-date">2022 · Mulai Bersama</p><h3>Belajar Saling Menguatkan</h3><p>Hari demi hari, kami belajar tentang kepercayaan, pengertian, dan tumbuh bersama.</p></article>
+        <article class="timeline-item"><span class="timeline-dot">💍</span><p class="timeline-date">2026 · Lamaran</p><h3>Memilih Masa Depan Bersama</h3><p>Dengan restu keluarga, kami memantapkan hati untuk melangkah menuju ikatan pernikahan.</p></article>
+      </div>
+    </section>
+
+    <section class="countdown-section section-tint">
+      <p class="eyebrow">MENUJU HARI BAHAGIA</p><h2>Save the Date</h2><p class="countdown-date">Minggu, 22 November 2026</p>
+      <div class="countdown" id="countdown" aria-label="Hitung mundur menuju pernikahan">
+        <div><strong id="days">00</strong><span>Hari</span></div><div><strong id="hours">00</strong><span>Jam</span></div><div><strong id="minutes">00</strong><span>Menit</span></div><div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+      <button class="button button-outline" id="calendarButton">＋ Simpan ke Kalender</button>
+    </section>
+
+    <section class="event section" id="event">
+      <div class="section-heading"><p class="eyebrow">CATAT TANGGALNYA</p><h2>Rangkaian Acara</h2><p>Doa dan kehadiran Anda merupakan hadiah yang berarti bagi kami.</p></div>
+      <div class="event-grid">
+        <article class="event-card"><div class="event-icon">☾</div><p class="eyebrow">ACARA PERTAMA</p><h3>Akad Nikah</h3><div class="event-detail"><span>▦</span><div><strong>Minggu, 22 November 2026</strong><small>08.00 – 10.00 WIB</small></div></div><div class="event-detail"><span>⌖</span><div><strong>Kediaman Mempelai Wanita</strong><small>Jl. Melati No. 10, Cirebon, Jawa Barat</small></div></div><a class="button button-outline full" href="https://maps.google.com/?q=Cirebon" target="_blank" rel="noreferrer">Petunjuk Lokasi ↗</a></article>
+        <article class="event-card event-card-featured"><div class="event-icon">✧</div><p class="eyebrow">ACARA KEDUA</p><h3>Resepsi Pernikahan</h3><div class="event-detail"><span>▦</span><div><strong>Minggu, 22 November 2026</strong><small>11.00 – 14.00 WIB</small></div></div><div class="event-detail"><span>⌖</span><div><strong>Gedung Bahagia</strong><small>Jl. Kartini, Cirebon, Jawa Barat</small></div></div><a class="button button-primary full" href="https://maps.google.com/?q=Cirebon" target="_blank" rel="noreferrer">Petunjuk Lokasi ↗</a></article>
+      </div>
+      <div class="event-notes"><span>✦</span><p><strong>Dress code:</strong> biru pastel, putih, atau warna lembut. <strong>Catatan:</strong> tersedia area parkir di lokasi acara. Silakan hubungi keluarga jika membutuhkan bantuan.</p></div>
+    </section>
+
+    <section class="gallery section section-tint" id="gallery">
+      <div class="section-heading"><p class="eyebrow">MOMEN YANG KAMI SIMPAN</p><h2>Galeri Bahagia</h2><p>Beberapa potongan cerita untuk dikenang.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-a" data-gallery="1" aria-label="Perbesar foto galeri 1"><span>01</span></button>
+        <button class="gallery-item gallery-b" data-gallery="2" aria-label="Perbesar foto galeri 2"><span>02</span></button>
+        <button class="gallery-item gallery-c" data-gallery="3" aria-label="Perbesar foto galeri 3"><span>03</span></button>
+        <button class="gallery-item gallery-d" data-gallery="4" aria-label="Perbesar foto galeri 4"><span>04</span></button>
+        <button class="gallery-item gallery-e" data-gallery="5" aria-label="Perbesar foto galeri 5"><span>05</span></button>
+        <button class="gallery-item gallery-f" data-gallery="6" aria-label="Perbesar foto galeri 6"><span>06</span></button>
+      </div>
+      <p class="gallery-hint">Ganti ilustrasi galeri dengan foto prewedding milik Anda di folder <code>assets/</code>.</p>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="section-heading"><p class="eyebrow">KAMI MENUNGGU KABAR BAIK ANDA</p><h2>Konfirmasi Kehadiran</h2><p>Mohon isi formulir berikut agar kami dapat mempersiapkan acara dengan baik.</p></div>
+      <form class="form-card" id="rsvpForm">
+        <label>Nama lengkap<input name="name" id="rsvpName" required maxlength="100" placeholder="Nama Anda"></label>
+        <label>Nomor WhatsApp (opsional)<input name="phone" type="tel" maxlength="24" placeholder="08xxxxxxxxxx"></label>
+        <label>Konfirmasi kehadiran<select name="attendance" required><option value="">Pilih jawaban</option><option value="Hadir">Ya, saya akan hadir</option><option value="Tidak hadir">Maaf, saya tidak bisa hadir</option><option value="Belum pasti">Belum dapat memastikan</option></select></label>
+        <label>Jumlah orang yang hadir<select name="count"><option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option><option value="5">5 orang</option></select></label>
+        <label>Sesi acara<select name="session"><option>Akad dan resepsi</option><option>Akad nikah</option><option>Resepsi</option></select></label>
+        <label>Pesan untuk mempelai (opsional)<textarea name="message" rows="3" maxlength="500" placeholder="Tulis pesan singkat..."></textarea></label>
+        <button class="button button-primary full" type="submit">Kirim Konfirmasi</button>
+        <p class="form-message" id="rsvpMessage" role="status"></p>
+        <p class="form-note">Demo statis: data disimpan di browser perangkat ini. Untuk mengumpulkan data dari semua tamu, sambungkan ke backend/database.</p>
+      </form>
+    </section>
+
+    <section class="wishes section section-tint" id="wishes">
+      <div class="section-heading"><p class="eyebrow">DOA BAIK ANDA BERARTI BAGI KAMI</p><h2>Ucapan & Doa</h2><p>Tinggalkan doa dan harapan terbaik untuk perjalanan kami.</p></div>
+      <form class="form-card wishes-form" id="wishForm">
+        <label>Nama<input name="name" required maxlength="80" placeholder="Nama Anda"></label>
+        <label>Ucapan dan doa<textarea name="wish" required maxlength="500" rows="4" placeholder="Semoga menjadi keluarga yang..."></textarea></label>
+        <button class="button button-primary full" type="submit">Kirim Ucapan</button><p class="form-message" id="wishMessage" role="status"></p>
+      </form>
+      <div class="wishes-list" id="wishesList" aria-live="polite"></div>
+    </section>
+
+    <section class="gift section" id="gift">
+      <div class="section-heading"><p class="eyebrow">TANDA KASIH</p><h2>Hadiah Pernikahan</h2><p>Doa restu Anda adalah hadiah terindah. Namun jika ingin berbagi tanda kasih, dapat melalui informasi berikut.</p></div>
+      <div class="gift-grid">
+        <article class="gift-card"><div class="bank-mark">BCA</div><p class="eyebrow">BANK BCA</p><h3 id="accountNumber">1234567890</h3><p>a.n. Alya Putri Maharani</p><button class="button button-outline copy-button" data-copy="1234567890">Salin Nomor Rekening</button></article>
+        <article class="gift-card"><div class="bank-mark bank-mark-blue">♡</div><p class="eyebrow">KIRIM HADIAH</p><h3>Kediaman Alya</h3><p>Jl. Melati No. 10, Cirebon, Jawa Barat</p><button class="button button-outline" data-copy="Jl. Melati No. 10, Cirebon, Jawa Barat">Salin Alamat</button></article>
+      </div>
+      <p class="form-note centered">Informasi rekening dan alamat di atas adalah contoh. Ganti dengan data yang benar sebelum dipublikasikan.</p>
+    </section>
+
+    <section class="closing">
+      <div class="closing-flower">❀</div><p class="eyebrow">TERIMA KASIH</p><h2>Merupakan kebahagiaan<br>untuk berbagi hari ini dengan Anda.</h2>
+      <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh</p><div class="closing-names">Alya <span>&</span> Raka</div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 Alya & Raka</span><span>Dibuat dengan cinta <b>♡</b></span><a href="admin.html">Kelola undangan ↗</a></footer>
+
+  <dialog id="galleryDialog" class="gallery-dialog"><button class="dialog-close" id="closeGallery" aria-label="Tutup galeri">×</button><div class="dialog-art" id="dialogArt"></div><p id="dialogCaption">Momen bahagia</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
